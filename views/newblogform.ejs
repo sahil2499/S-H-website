@@ -1,0 +1,82 @@
+
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet" type="text/css">
+  
+  <body>
+    
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">S&H</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sessions">Session</a>
+        </li>
+        <% if(!currentUser) { %>
+        <li class="nav-item">
+          <a href="/blogs" class="nav-link">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/workshops">Workshops</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/teams">Teams</a>
+        </li>
+        <% } else{ %>
+        <li class="nav-item">
+          <a href="/ourblogs" class="nav-link">EditBlogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/ourworkshops">EditWorkshops</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/ourteams">EditTeams</a>
+        </li>
+        <% } %>
+        <li class="nav-item">
+          <a href="/mentalhealthseries" class="nav-link">Mental Health Series</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class ="ui main text container segment">
+      <form class="ui form" action ="/ourblogs" method="POST">
+    <div class="field">
+      <label>Title</label>
+        <input type ="text" name="blog[title]" placeholder="enter title" ></li>
+    </div>
+    <div class="field">
+      <label>Image</label>
+        <input type ="text" name="blog[image]" placeholder="enter image" ></li>
+    </div>
+    <div class="field">
+      <label>Body</label>
+        <textarea name="blog[body]"></textarea>
+    </div>
+    <div class="field">
+      <label>Description</label>
+        <textarea name="blog[description]"></textarea>
+    </div>
+    
+      <input class="ui violet big basic button" type="submit">
+  </form>
+  </div>
+  
+  </body>
+  </html>
+  

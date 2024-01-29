@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>mentalhealthseries</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="/bootstrap2.min.css">
+        <link rel="stylesheet" href="/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="/fontawesome1.css">
+        <link rel="stylesheet" href="/light-box.css">
+        <link rel="stylesheet" href="/owl-carousel.css">
+        <link rel="stylesheet" href="/templatemo-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+<body style= "background-image:url('https://images.unsplash.com/photo-1515549832467-8783363e19b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');background-repeat: no-repeat;background-attachment: fixed; background-size: cover">
+
+
+
+        <header class="nav-down responsive-nav hidden-lg hidden-md">
+            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--/.navbar-header-->
+            <div id="main-nav" class="collapse navbar-collapse">
+                <nav>
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                        <a href="/" class="nav-link ">Home</a>
+                    </li>
+                            <li class="nav-item">
+                        <a href="/sessions" class="nav-link ">Sessions</a>
+                    </li>
+                                  <li class="nav-item">
+                        <a href="/workshops" class="nav-link ">Workshops</a>
+                    </li>
+                    <% if(!currentUser){ %>
+                    <li class="nav-item">
+                        <a href="/teams" class="nav-link ">Team</a>
+                    </li>
+                    <% } else{ %>
+                    <li class="nav-item">
+                        <a href="/ourteams" class="nav-link ">EditTeam</a>
+                    </li>
+                    <% } %>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="sidebar-navigation hidde-sm hidden-xs">
+            <div class="logo" style="background-color:#f1c111">
+                <a href="#" style="color:black">S&H</a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/"> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/sessions">
+                            Sessions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/workshops">
+                            Workshops
+                        </a>
+                    </li>
+                    <% if(!currentUser){ %>
+                    <li>
+                        <a href="/teams">
+                            Team
+                        </a>
+                    </li>
+                    <% } else { %>
+                    <li>
+                        <a href="/ourteams">
+                            EditTeam
+                        </a>
+                    </li>
+                    <% } %>
+                </ul>
+            </nav>
+            <ul class="social-icons">
+                <li><a href="https://www.instagram.com/strongandhealthyminds_/?hl=en" class="fa fa-instagram"></a></li>
+              <li><a href="https://twitter.com/SHminds20?s=09" class="fa fa-twitter"></a></li>
+              <li><a href="https://www.linkedin.com/in/strong-and-healthy-minds-b544881aa" class="fa fa-linkedin"></a></li>
+              <li><a href="https://m.facebook.com/SH-Strong-and-Healthy-Minds-106850374371876/?modal=admin_todo_tour&notif_t=page_invite&notif_id=1589822569942146&ref=m_notif" class="fa fa-facebook"></a></li>
+            </ul>
+        </div>
+
+            <div class="slider">
+            <div class="Modern-Slider content-section" id="top">
+                <!-- Item -->
+                <div class="item item-1">
+                    <div class="img-fill">
+                    <div class="image"></div>
+                    <div class="info">
+                        <div>
+                          <h1>Mental Health Series<br>by S&H</h1>
+                         
+                          <div class="white-button button">
+                              <!--<a href="#featured">Discover More</a>-->
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Item -->
+                <!-- Item -->
+                <div class="item item-2">
+                    <div class="img-fill">
+                        <div class="image"></div>
+                        <div class="info">
+                        <div>
+                          <h1>Mental Health Series<br>by S&H</h1>
+                         
+                          
+                          <!--<div class="white-button button">-->
+                          <!--    <a href="#featured">Share More</a>-->
+                          <!--</div>-->
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Item -->
+                <!-- Item -->
+                <div class="item item-3">
+                    <div class="img-fill">
+                        <div class="image"></div>
+                        <div class="info">
+                        <div>
+                          <h1>Mental Health Series<br>by S&H</h1>
+                         
+                          
+                          <!--<div class="white-button button">-->
+                          <!--    <a href="#featured">Share More</a>-->
+                          <!--</div>-->
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Item -->
+            </div>
+        </div>
+
+
+
+        <div class="page-content">
+            <section id="featured" class="content-section">
+                <div class="section-heading">
+                    <h1>View Our <br><em>Series</em></h1>
+                  
+                  <p>
+"Through our mental health series we are constantly educating and empowering the community to Accept their mental health issues, Approach a mental health professional and Adopt effective coping strategies. We are intending to launch several series encouraging people to participate and become more aware and perceptive."
+
+ </p>
+                    <!--<p>"We are constantly devoted to work towards generating awareness amongst people about mental health illness,hoping to break stigma surrounding mental health. We are intending to launch several series encouraging people to participate and become more aware and educated."</p>-->
+                    <br></br>
+                    
+                </div>
+                <div class="section-content">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="image">
+                                <img src="https://images.unsplash.com/photo-1480072723304-5021e468de85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                                <div class="featured-button button">
+                                    <a href="/mentalhealthseries/show">Show series</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Inspiring You</h4>
+                                <span>21 May , 2020 </span>
+                                <p style="padding:5px">#1 
+Introducing you all to our first series, “Inspiring you”. We hope the shared journeys and battles of mental health warriors & survivors fill your life with inspiration and positivity.
+
+We hope these series consciously help you realise that you are not alone, and motivate you to be a warrior in your own story. </p>
+                                <div>
+                    <a href="/mentalhealthseries/show"><button class="btn btn-primary btn-lg">Show Series</button></a>
+                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </section>
+            <button class="btn btn-primary btn-lg" onclick="topFunction()">Back to Top</button>
+            <section class="footer">
+               <p>
+                 S&H
+               </p>
+            </section>
+        </div>
+
+    
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="/bootstrap2.min.js"></script>
+    
+    <script src="/plugins.js"></script>
+    <script src="/main.js"></script>
+
+    <!--<script>-->
+       
+    <!--    var didScroll;-->
+    <!--    var lastScrollTop = 0;-->
+    <!--    var delta = 5;-->
+    <!--    var navbarHeight = $('header').outerHeight();-->
+
+    <!--    $(window).scroll(function(event){-->
+    <!--        didScroll = true;-->
+    <!--    });-->
+
+    <!--    setInterval(function() {-->
+    <!--        if (didScroll) {-->
+    <!--            hasScrolled();-->
+    <!--            didScroll = false;-->
+    <!--        }-->
+    <!--    }, 250);-->
+
+    <!--    function hasScrolled() {-->
+    <!--        var st = $(this).scrollTop();-->
+            
+           
+    <!--        if(Math.abs(lastScrollTop - st) <= delta)-->
+    <!--            return;-->
+            
+            
+    <!--        if (st > lastScrollTop && st > navbarHeight){-->
+                
+    <!--            $('header').removeClass('nav-down').addClass('nav-up');-->
+    <!--        } else {-->
+                
+    <!--            if(st + $(window).height() < $(document).height()) {-->
+    <!--                $('header').removeClass('nav-up').addClass('nav-down');-->
+    <!--            }-->
+    <!--        }-->
+            
+    <!--        lastScrollTop = st;-->
+    <!--    }-->
+    <!--</script>-->
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>

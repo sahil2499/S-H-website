@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Home</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="/bootstrap.min.css">
+     <link rel="stylesheet" href="/font-awesome.min.css">
+     <link rel="stylesheet" href="/aos.css">
+     <link rel="stylesheet" href="/owl.carousel.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="/homemain.css">
+    <style>
+
+.owl-theme .owl-dots,.owl-theme .owl-nav
+{text-align:center;-webkit-tap-highlight-color:transparent}
+.owl-theme .owl-nav{margin-top:10px}
+.owl-theme .owl-nav [class*=owl-]{color:#FFF;font-size:14px;margin:5px;padding:4px 7px;background:#D6D6D6;display:inline-block;cursor:pointer;border-radius:3px}
+.owl-theme .owl-nav [class*=owl-]:hover{background:#869791;color:#FFF;text-decoration:none}
+.owl-theme .owl-nav .disabled{opacity:.5;cursor:default}
+.owl-theme .owl-nav.disabled+.owl-dots{margin-top:10px}
+.owl-theme .owl-dots .owl-dot{display:inline-block;zoom:1}
+.owl-theme .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 7px;background:#D6D6D6;display:block;-webkit-backface-visibility:visible;transition:opacity .2s ease;border-radius:30px}
+.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#869791}
+    </style>  
+    
+</head>
+<body style= "background-image:url('https://images.unsplash.com/photo-1515549832467-8783363e19b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');background-repeat: no-repeat;background-attachment: fixed; background-size: cover">
+
+     <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg" style="background-color:#171819">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+              <strong>S&H</strong>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link smoothScroll">Home</a>
+                    </li>
+                    <% if(!currentUser) { %>
+                    <li class="nav-item">
+                        <a href="/blogs" class="nav-link smoothScroll">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/teams" class="nav-link smoothScroll">Team</a>
+                    </li>
+                    <% } else{ %>
+                    <li class="nav-item">
+                        <a href="/ourblogs" class="nav-link smoothScroll">EditBlogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/ourteams" class="nav-link smoothScroll">EditTeam</a>
+                    </li>
+                    <% } %>
+                    <li class="nav-item">
+                        <a href="/workshops" class="nav-link smoothScroll">Workshops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/sessions" class="nav-link smoothScroll">Sessions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/mentalhealthseries" class="nav-link smoothScroll">Mental Health Series</a>
+                    </li>
+                    <% if(!currentUser) { %>
+                    <li class="nav-item">
+                        <a href="/login" class="nav-link smoothScroll">Login</a>
+                    </li>
+                    <% } else{ %>
+                    <li class="nav-item">
+                        <a href="/logout" class="nav-link smoothScroll">Logout</a>
+                    </li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+     <!-- HERO -->
+     <section class="hero hero-bg d-flex justify-content-center align-items-center">
+               <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                              <div class="hero-text">
+
+                                   <h1 class="text-white" data-aos="fade-up">STRONG AND HEALTHY MINDS</h1>
+                                   <h4 style="font-family:Comic Sans MS">“People start to heal the moment they feel hurt”</h4>
+                                   <p>-Cheryl Richardson</p>
+
+                                   <!--<a href="contact.html" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Let us discuss together!</a>-->
+
+                                   <!--<strong class="d-block py-3 pl-5 text-white" data-aos="fade-up" data-aos-delay="200"><i class="fa fa-phone mr-2"></i> +99 080 070 4224</strong>-->
+                              </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                          <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+
+                            <img src="https://sandhbucket.s3.ap-south-1.amazonaws.com/public/WhatsApp+Image+2020-05-13+at+3.45.01+PM.jpeg" class="img-fluid" alt="working girl">
+                          </div>
+                        </div>
+                    </div>
+               </div>
+     </section>
+
+
+     <!-- ABOUT -->
+     <section class="about section-padding pb-0" id="about">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-7 mx-auto col-md-10 col-12">
+                         <div class="about-info">
+
+                              <h2 class="mb-4" data-aos="fade-up"> <strong>ABOUT US</strong></h2>
+
+                               <p style="text-align:justify" class="mb-0" data-aos="fade-up">S&H, under the aegis of Smt. Meera Foundation is a “Mental Health Initiative”-</p>
+<p class="mb-0" data-aos="fade-up" style="text-align:justify">With a Client Centered approach the initiative promotes “Strong and Healthy minds”. At S&H, the team dedicatedly works towards improving community mental health, building a strong support system and encouraging people to “#SeekHelp”. The initiative targets people around the country advocating the need to attend to mental health conditions through professional help and guidance rather than dealing with it alone. Our team offers counselling services for varied mental health concerns with a motive to help people cope effectively with the stressors and prevent unhealthy state of mind..</p>  
+                           <br></br>
+                             <p style="text-align:justify" class="mb-0" data-aos="fade-up">Our Agendas-
+
+</p>
+<p style="text-align:justify" class="mb-0" data-aos="fade-up">1)  Break the stigmas surrounding mental health conditions in the country through our training programs, workshops and Mental Health Serie</p>
+                      <p style="text-align:justify" class="mb-0" data-aos="fade-up">2) Provide sound mental health care through effective counseling strategies</p>                                     
+                             <br></br>
+                              <!--<br><br>You are <strong>allowed</strong> to use this template for commercial or non-commercial purpose. You are NOT allowed to redistribute the template ZIP file on template collection websites.</p>-->
+                         </div>
+
+                         <div class="about-image" data-aos="fade-up" data-aos-delay="200">
+
+                          <img src="https://sandhbucket.s3.ap-south-1.amazonaws.com/public/talk.png" class="img-fluid" alt="office">
+                        </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+     <!-- TESTIMONIAL -->
+     <section class="testimonial section-padding">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-6 col-md-5 col-12">
+                        <div class="contact-image" data-aos="fade-up">
+
+                          <img src="https://sandhbucket.s3.ap-south-1.amazonaws.com/public/therapy2.jpg" class="img-fluid" alt="website" style="height:500px;margin-top:80px">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-7 col-12">
+                      <!--<h4 class="my-5 pt-3" data-aos="fade-up" data-aos-delay="100">VISION</h4>-->
+
+                      <div class="quote" data-aos="fade-up" data-aos-delay="200"></div>
+
+                      <h2 class="mb-4" data-aos="fade-up"> <strong>VISION</strong></h2>
+                      <p class="mb-0" data-aos="fade-up" style="text-align:justify">Our vision is to create a world where mental health problems are widely accepted and commonly dealt with thus bringing in normality to the concept of mental health. We hope to create a society where issues pertaining to mental health are recognised, managed and addressed by professionals through rightful intervention..</p>
+                                            <!--<h4 ><p>Our vision is to create a world where mental health problems are widely accepted and worked upon rather than being unattended. S&H carries the notion of breaking through the stigmatization with a belief to ‘normalize’ the concept of mental well being to be commonly dealt than being neglected; further extending mental health interventions to the community as a whole than just to one section of the society.</p></h4>-->
+                      <p data-aos="fade-up" data-aos-delay="400">
+                          
+                          <h2 class="mb-4" data-aos="fade-up"> <strong>MISSION</strong></h2>
+                          <!--<p class="mb-0" data-aos="fade-up" style="text-align:justify">Like any other physical ailment mental well being is also an ailment we all should be necessarily looking after rather than keeping it stored in which later leads to manifestation of more complex problem.</p>-->
+
+ <!--<p class="mb-0" data-aos="fade-up" style="text-align:justify">Our mission is to make the community realize the unstable grounds on which the stigmatization exists and stands upon still.</p>-->
+ <p class="mb-0" data-aos="fade-up" style="text-align:justify">-To organise outreach programs educating the people of the community regarding mental health issues. We hope to build a strong trusting relationship by extending social, emotional and psychological support to the people of the community regardless of their socio-economic status
+
+</p>
+<p class="mb-0" data-aos="fade-up" style="text-align:justify">-To judiciously use the rightful evidence based therapeutic strategies and interventions to help people deal with mental health issues effectively with an aim to contribute  to the professional field of counselling and psychotherapy 
+
+
+</p>
+    <!--<p class="mb-0" data-aos="fade-up" style="text-align:justify">-To Ensure that the concept of positive mental health well being is retained, encouraged and publicized-->
+
+
+
+        <p class="mb-0" data-aos="fade-up" style="text-align:justify">-To encourage and empower the community towards positivity, resilience, optimism, open mindedness,emotional stability, and enhanced social relationships thus preventing stigmas, unawareness, neglect and ignorance related to mental health field
+
+ 
+
+</p>
+            
+
+                                            <!--<h4 class="my-5 pt-3" data-aos="fade-up" data-aos-delay="100"> Like any other physical ailment mental well being is also an ailment we all should be necessarily looking after rather than keeping it stored in which later leads to manifestation of more complex problem.-->
+
+<!--Our mission.</h4>-->
+                      <!--<p data-aos="fade-up" data-aos-delay="400">-->
+                        
+                      </p>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+            <h1 class="text-white" data-aos="fade-up" data-aos-delay="100"><strong>Strong and Healthy Minds</strong></h1>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="my-4">Contact Info</h4>
+
+            <p class="mb-1">
+              <i class="fa fa-phone mr-2 footer-icon"></i> 
+              +91 9667011658/+91 9711034155
+            </p>
+
+            <p>
+              <a href="mailto:psychologymindful@gmail.com">
+                <i class="fa fa-envelope mr-2 footer-icon"></i>
+                psychologymindful@gmail.com
+              </a>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
+            <h4 class="my-4">Our Workplace</h4>
+
+            <p class="mb-1">
+              <i class="fa fa-home mr-2 footer-icon"></i> 
+              Gurugram , Harayana
+            </p>
+          </div>
+
+          <div class="col-lg-4 mx-lg-auto text-center col-md-8 col-12" data-aos="fade-up" data-aos-delay="400">
+            <p class="copyright-text">"We are always there for you...."
+            <br>
+            <a rel="nofollow noopener" href="https://templatemo.com">
+            </a></p>
+          </div>
+
+          <div class="col-lg-4 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+            
+           
+          </div>
+
+          <div class="col-lg-3 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
+            <ul class="social-icon">
+              <li><a href="https://www.instagram.com/strongandhealthyminds_/?hl=en" class="fa fa-instagram"></a></li>
+              <li><a href="https://twitter.com/SHminds20?s=09" class="fa fa-twitter"></a></li>
+              <li><a href="https://www.linkedin.com/in/strong-and-healthy-minds-b544881aa" class="fa fa-linkedin"></a></li>
+              <li><a href="https://m.facebook.com/SH-Strong-and-Healthy-Minds-106850374371876/?modal=admin_todo_tour&notif_t=page_invite&notif_id=1589822569942146&ref=m_notif" class="fa fa-facebook"></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+
+     <!-- SCRIPTS -->
+     <script src="/jquery.min.js"></script>
+     <script src="/bootstrap.min.js"></script>
+     <script src="/aos.js"></script>
+     <script src="/owl.carousel.min.js"></script>
+     <script src="/smoothscroll.js"></script>
+     <script src="/custom.js"></script>
+     <!-- JS, Popper.js, and jQuery -->
+     <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>

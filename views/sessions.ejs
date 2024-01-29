@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Sessions</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="/font-awesome1.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/slick-theme.css" />
+    <link rel="stylesheet" href="/sessions.css">
+          <link rel="stylesheet" href="/aos.css">
+    <!-- tooplate style -->
+
+    <script>
+        var renderPage = true;
+
+        if (navigator.userAgent.indexOf('MSIE') !== -1
+            || navigator.appVersion.indexOf('Trident/') > 0) {
+            /* Microsoft Internet Explorer detected in. */
+            alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
+            renderPage = false;
+        }
+    </script>
+
+</head>
+
+<body style= "background-image:url('https://images.unsplash.com/photo-1515549832467-8783363e19b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');background-repeat: no-repeat;background-attachment: fixed; background-size: cover">
+    <!-- Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <div class="container">
+        <section class="tm-section-head" id="top">
+            <header id="header" class="text-center tm-text-gray">
+                <h1>STRONG AND HEALTHY MINDS</h1>
+               
+            </header>
+
+            <nav class="navbar narbar-light">
+                <a class="navbar-brand tm-text-gray" href="#">
+                    Menu
+                </a>
+                <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa fa-navicon tm-fa-toggler-icon"></i>
+                    </span>
+                </button>
+                <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link tm-text-gray" href="/">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <% if(!currentUser) { %>
+                        <li class="nav-item">
+                            <a class="nav-link tm-text-gray" href="/blogs">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tm-text-gray" href="/teams">Team</a>
+                        </li>
+                        <% } else{ %>
+                        <li class="nav-item">
+                            <a class="nav-link tm-text-gray" href="/ourblogs">EditBlog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tm-text-gray" href="/ourteams">EditTeam</a>
+                        </li>
+                        <% } %>
+                        <li class="nav-item">
+                            <a class="nav-link tm-text-gray" href="/workshops">Workshops</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tm-text-gray" href="/mentalhealthseries">Mental Health Series</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="navbar navbar-default navbar-fixed-top">
+                <a href="/index.html" class="navbar-brand"></a>
+                <botton class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mydropdown">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </botton>
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="mydropdown">
+
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">info</a>
+                    </li>
+                    <li>
+                        <a href="#">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="row" id="tm-section-1">
+            <div class="col-lg-12 tm-slider-col">
+                <div class="tm-img-slider">
+                    <div class="tm-img-slider-item" href="img/gallery-img-01.jpg">
+                        <p class="tm-slider-caption">"Never be afraid to fall apart because it's an oppurtunity to rebuild yourself the way you wish you had been all along." - Carl Rogers</p>
+                        <img src="https://sandhbucket.s3.ap-south-1.amazonaws.com/public/hand.jpg" alt="Image" class="tm-slider-img">
+                    </div>
+                    <div class="tm-img-slider-item" href="img/gallery-img-02.jpg">
+                        <p class="tm-slider-caption">"Your life doesn't get better by chance,it gets better by change." - Jim Ron </p>
+                        <img src="https://sandhbucket.s3.ap-south-1.amazonaws.com/public/mindful.jpg" alt="Image" class="tm-slider-img">
+                    </div>
+                    <div class="tm-img-slider-item" href="img/gallery-img-03.jpg">
+                        <p class="tm-slider-caption">"What mental health needs is more sunlight,more cander,more unashamed conversations." - Glenn Close</p>
+                        <img src="https://sandhbucket.s3.ap-south-1.amazonaws.com/public/breathe.jpg" alt="Image" class="tm-slider-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tm-section-3 tm-section-mb" id="tm-section-3">
+            <br> </br>
+            <h1><center>HOW COUNSELLING IS HELPFULL ?</center></h1>
+            <p><center>Counseling is evidence based therapy, which creates a safe space for both the “counsellor” and the “person approaching help” to freely share and express in a confidential setting. With the client centered approach our mental health counsellors will help you to contemplate what you feel, how you feel and why you feel, bringing you close to both your conscious and unconscious self.
+
+ 
+
+At S&H anyone, no matter what age, caste, religion, gender, socio-economic status, struggles, and concerns can rightfully seek counselling. The duty of the counselor is not to guide, direct or advise but rather to facilitate and replace the irrational fears, cognitive distortions, pessimism with more positive, logical and desirable thought patterns. We address the concerns and make a plan of action; congruence with the clients existing state and needs..</p></center></p>
+            <!--<p><center>tectybdctghvftydctrhfv65ytrv65ytcdtrr5 5yvy56ce65ces45tfre45tfe45tfrv45cwe5tcecwe6yrces4trcc65tcd56tyce</center></p>-->
+            <!--<p><center>tectybdctghvftydctrhfv65ytrv65ytcdtrr5 5yvy56ce65ces45tfre45tfe45tfrv45cwe5tcecwe6yrces4trcc65tcd56tyce</center></p>-->
+            <!--<p><center>tectybdctghvftydctrhfv65ytrv65ytcdtrr5 5yvy56ce65ces45tfre45tfe45tfrv45cwe5tcecwe6yrces4trcc65tcd56tyce</center></p>-->
+            
+            <br></br>
+            <div class="text-center">
+                            <a href="/services" class="btn btn-big">HOW CAN WE ASSIST YOU</a>
+                        </div>
+                        <br></br>
+            <!--<p><center>tectybdctghvftydctrhfv65ytrv65ytcdtrr5 5yvy56ce65ces45tfre45tfe45tfrv45cwe5tcecwe6yrces4trcc65tcd56tyce</center></p>-->
+            <div class="row">
+                <div class="col-md-6 tm-mb-sm-4 tm-2col-l">
+                    <div class="image">
+                        <img src="https://sandhbucket.s3.ap-south-1.amazonaws.com/public/New+folder/photo-1484807352052-23338990c6c6.jpg" class="img-fluid" />
+                    </div>
+                    <div class="tm-box-3">
+                        <h2>Online Sessions</h2>
+                        <p><li>Duration       - 45 minutes</li></p>
+                        <p><li>Timings - Weekdays (4pm-7pm)/Weekend (9am-4pm)  </li></p>
+                        <div class="text-center">
+                            <a href="/register" class="btn btn-big">Register</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 tm-2col-r">
+                    <div class="image">
+                        <img src="https://sandhbucket.s3.ap-south-1.amazonaws.com/public/therapy.jpg" class="img-fluid" />
+                    </div>
+                    <div class="tm-box-3">
+                        <header>
+                            <h2>Walk-in Sessions</h2>
+                        </header>
+                        <p><li>Duration       - 45 minutes</li></p>
+                        <p><li>Timings - Weekdays (5pm-7pm)/Weekend (9am-4pm)  </li></p>
+                         <!--<p><li>              : Weekend (9am-4pm)  </li></p>-->
+                        <div class="text-center">
+                            <a href="/register" class="btn btn-big">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br></br>
+            <a href="/termsandconditions"><button>Terms & Conditions</button></a>
+        </section>
+
+
+        <section class="tm-section-5" id="tm-section-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="image fit">
+                        <img src="https://sandhbucket.s3.ap-south-1.amazonaws.com/public/counseling.jpg" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-md-12 col-sm-12 pl-lg-0">
+                    <div class="media tm-media">
+                        <img src="https://cdn.pixabay.com/photo/2014/03/24/17/19/teacher-295387__340.png" class="img-responsive tm-media-img">
+                        <div class="media-body tm-box-5">
+                            <h2>Malvika Samnani</h2>
+                            <h4>Founder, Meera Foundation </h4>
+                            <p class="mb-0">"Strong and healthy mind is the need of the hour and need of the community. Community mental health has become more important than ever"</p>
+                        </div>
+                    </div>
+                    <div class="media tm-media">
+                        <img src="https://cdn.pixabay.com/photo/2014/03/24/17/19/teacher-295387__340.png" class="img-responsive tm-media-img">
+                        <div class="media-body tm-box-5">
+                            <h2>Afreen</h2>
+                            <h4>Client</h4>
+                            <p class="mb-0">"Words fall short to express the guidence and support that I have recieved from S&H. I'm now able to understand myself better and grow in positive direction"</p>
+                        </div>
+                    </div>
+                    <div class="media tm-media">
+                        <img src="https://cdn.pixabay.com/photo/2014/03/24/17/19/teacher-295387__340.png" class="img-responsive tm-media-img">
+                        <div class="media-body tm-box-5">
+                            
+                            <h2>Akansha</h2>
+                            <h4>Client</h4>
+                            <p class="mb-0"> "I would recommend S&H to anyone who feels low. I'm greatful for their services and considerate approach"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- load JS files -->
+    <script type="text/javascript" src="/jquery-1.11.3.min.js"></script>
+    <script src="/popper.min.js"></script>
+    <!-- https://popper.js.org/ -->
+    <script src="/bootstrap.min.js"></script>
+    <!-- https://getbootstrap.com/ -->
+    <script type="text/javascript" src="/slick.min.js"></script>
+    <!-- Slick Carousel -->
+
+    <script>
+        function setCarousel() {
+            var slider = $('.tm-img-slider');
+
+            if (slider.hasClass('slick-initialized')) {
+                slider.slick('destroy');
+            }
+
+            if ($(window).width() > 991) {
+                // Slick carousel
+                slider.slick({
+                    autoplay: true,
+                    fade: true,
+                    speed: 800,
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                });
+            } else {
+                slider.slick({
+                    autoplay: true,
+                    fade: true,
+                    speed: 800,
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                });
+            }
+        }
+
+        $(document).ready(function () {
+            if (renderPage) {
+                $('body').addClass('loaded');
+            }
+
+            setCarousel();
+
+            $(window).resize(function () {
+                setCarousel();
+            });
+
+            // Close menu after link click
+            $('.nav-link').click(function () {
+                $('#mainNav').removeClass('show');
+            });
+
+            // https://css-tricks.com/snippets/jquery/smooth-scrolling/
+            // Select all links with hashes
+            $('a[href*="#"]')
+                // Remove links that don't actually link to anything
+                .not('[href="#"]')
+                .not('[href="#0"]')
+                .click(function (event) {
+                    // On-page links
+                    if (
+                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                        &&
+                        location.hostname == this.hostname
+                    ) {
+                        // Figure out element to scroll to
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        // Does a scroll target exist?
+                        if (target.length) {
+                            // Only prevent default if animation is actually gonna happen
+                            event.preventDefault();
+                            $('html, body').animate({
+                                scrollTop: target.offset().top + 1
+                            }, 1000, function () {
+                                // Callback after animation
+                                // Must change focus!
+                                var $target = $(target);
+                                $target.focus();
+                                if ($target.is(":focus")) { // Checking if the target was focused
+                                    return false;
+                                } else {
+                                    $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                    $target.focus(); // Set focus again
+                                };
+                            });
+                        }
+                    }
+                });
+        });
+    </script>
+
+
+
+</body>
+
+</html>

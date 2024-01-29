@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Our Team</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/bootstrap.min.css">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="/fontawesome.css">
+    <link rel="stylesheet" href="/templatemo-sixteen.css">
+    <link rel="stylesheet" href="/owl.css">
+
+  </head>
+
+  <body style= "background-image:url('https://images.unsplash.com/photo-1515549832467-8783363e19b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');background-repeat: no-repeat;background-attachment: fixed; background-size: cover">
+
+    <!-- ***** Preloader Start ***** -->
+    <!--<div id="preloader">-->
+    <!--    <div class="jumper">-->
+    <!--        <div></div>-->
+    <!--        <div></div>-->
+    <!--        <div></div>-->
+    <!--    </div>-->
+    <!--</div>  -->
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="/"><h2 style="color:#f1c111">S&H</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item">
+                        <a href="/" class="nav-link ">Home</a>
+                    </li>
+                            <li class="nav-item">
+                        <a href="/sessions" class="nav-link ">Sessions</a>
+                    </li>
+                                  <li class="nav-item">
+                        <a href="/workshops" class="nav-link ">Workshops</a>
+                    </li>
+                                  <li class="nav-item">
+                        <a href="/mentalhealthseries" class="nav-link ">Mental Health Series</a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="/ourblogs" class="nav-link ">EditBlogs</a>
+                    </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-heading about-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-content">
+             
+              <h2>MEET THE TEAM..</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="best-features about-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Our Background</h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right-image">
+              <img src="https://sandhbucket.s3.ap-south-1.amazonaws.com/public/2.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="left-content">
+              <h4>Who we are &amp; What we do?</h4>
+                 <p>S&H is a team of committed, self-motivated, empathetic and skilled mental health professionals. Our experts are trained counsellors and psychotherapists with an expertise in providing sound care to the clients. We facilitate  skillful client centred interventions using an effective, ethical and eclectic approach. </p>  
+              <!--<p>S&H is a “Mental Health Initiative”, under the aegis of Smt. Meera Foundation. With a ‘client centered approach the initiative promotes Strong and Healthy minds. At S&H, the team dedicatedly works toward improving community mental health conditions and building strong support system to help people prevent unhealthy state of mental wellbeing The initiative targets people around the country, encouraging them to focus on their mental health and help them cope effectively with the stressors through professional help and guidance than dealing with it alone..</p>-->
+              <ul class="social-icons">
+                <li><a href="https://www.instagram.com/strongandhealthyminds_/?hl=en" class="fa fa-instagram"></a></li>
+              <li><a href="https://twitter.com/SHminds20?s=09" class="fa fa-twitter"></a></li>
+              <li><a href="https://www.linkedin.com/in/strong-and-healthy-minds-b544881aa" class="fa fa-linkedin"></a></li>
+              <li><a href="https://m.facebook.com/SH-Strong-and-Healthy-Minds-106850374371876/?modal=admin_todo_tour&notif_t=page_invite&notif_id=1589822569942146&ref=m_notif" class="fa fa-facebook"></a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="team-members">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>We Are There For You Always...</h2>
+              <a href="/ourteams/new"><button>Add Team Member</button></a>
+            </div>
+          </div>
+          
+          <% team.forEach(function(team){ %>
+          <div class="col-md-4">
+            <div class="team-member">
+              <div class="thumb-container">
+                <img src="<%=team.image1%>" alt="">
+                <div class="hover-effect">
+                  <div class="hover-content">
+                    <ul class="social-icons">
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="down-content">
+                <h4><%=team.title1%></h4>
+                <p><%=team.description1%></p>
+                <span><%=team.body1%></span>
+                
+                <a href="/ourteams/<%=team._id%>"><button>Read More</button></a>
+             </div>
+            </div>
+          </div>
+          <% }) %>
+          </div>
+          </div>
+          </div>
+          <!--<div class="col-md-4">-->
+          <!--  <div class="team-member">-->
+          <!--    <div class="thumb-container">-->
+          <!--      <img src="assets/images/team_02.jpg" alt="">-->
+          <!--      <div class="hover-effect">-->
+          <!--        <div class="hover-content">-->
+          <!--          <ul class="social-icons">-->
+          <!--            <li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+          <!--            <li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+          <!--            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+          <!--            <li><a href="#"><i class="fa fa-behance"></i></a></li>-->
+          <!--          </ul>-->
+          <!--        </div>-->
+          <!--      </div>-->
+          <!--    </div>-->
+          <!--    <div class="down-content">-->
+          <!--      <h4>Karry Pitcher</h4>-->
+          <!--      <span>Product Expert</span>-->
+          <!--      <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>-->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--</div>-->
+          <!--<div class="col-md-4">-->
+          <!--  <div class="team-member">-->
+          <!--    <div class="thumb-container">-->
+          <!--      <img src="assets/images/team_03.jpg" alt="">-->
+          <!--      <div class="hover-effect">-->
+          <!--        <div class="hover-content">-->
+          <!--          <ul class="social-icons">-->
+          <!--            <li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+          <!--            <li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+          <!--            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+          <!--            <li><a href="#"><i class="fa fa-behance"></i></a></li>-->
+          <!--          </ul>-->
+          <!--        </div>-->
+          <!--      </div>-->
+          <!--    </div>-->
+              
+              
+              
+    <!--          <div class="down-content">-->
+    <!--            <h4>Michael Soft</h4>-->
+    <!--            <span>Chief Marketing</span>-->
+    <!--            <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--      <div class="col-md-4">-->
+    <!--        <div class="team-member">-->
+    <!--          <div class="thumb-container">-->
+    <!--            <img src="assets/images/team_04.jpg" alt="">-->
+    <!--            <div class="hover-effect">-->
+    <!--              <div class="hover-content">-->
+    <!--                <ul class="social-icons">-->
+    <!--                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+    <!--                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+    <!--                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+    <!--                  <li><a href="#"><i class="fa fa-behance"></i></a></li>-->
+    <!--                </ul>-->
+    <!--              </div>-->
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--          <div class="down-content">-->
+    <!--            <h4>Mary Cool</h4>-->
+    <!--            <span>Product Specialist</span>-->
+    <!--            <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--      <div class="col-md-4">-->
+    <!--        <div class="team-member">-->
+    <!--          <div class="thumb-container">-->
+    <!--            <img src="assets/images/team_05.jpg" alt="">-->
+    <!--            <div class="hover-effect">-->
+    <!--              <div class="hover-content">-->
+    <!--                <ul class="social-icons">-->
+    <!--                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+    <!--                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+    <!--                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+    <!--                  <li><a href="#"><i class="fa fa-behance"></i></a></li>-->
+    <!--                </ul>-->
+    <!--              </div>-->
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--          <div class="down-content">-->
+    <!--            <h4>George Walker</h4>-->
+    <!--            <span>Product Photographer</span>-->
+    <!--            <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--      <div class="col-md-4">-->
+    <!--        <div class="team-member">-->
+    <!--          <div class="thumb-container">-->
+    <!--            <img src="assets/images/team_06.jpg" alt="">-->
+    <!--            <div class="hover-effect">-->
+    <!--              <div class="hover-content">-->
+    <!--                <ul class="social-icons">-->
+    <!--                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+    <!--                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+    <!--                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+    <!--                  <li><a href="#"><i class="fa fa-behance"></i></a></li>-->
+    <!--                </ul>-->
+    <!--              </div>-->
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--          <div class="down-content">-->
+    <!--            <h4>Kate Town</h4>-->
+    <!--            <span>General Manager</span>-->
+    <!--            <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <!--  </div>-->
+    <!--</div>-->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="/custom1.js"></script>
+    <script src="/owl.js"></script>
+    <script src="/slick.js"></script>
+    <script src="/isotope.js"></script>
+    <script src="/accordions.js"></script>
+
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>

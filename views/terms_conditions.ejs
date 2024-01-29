@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="keywords" content="footer, address, phone, icons" />
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/app.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet" type="text/css">
+<style>
+  body {
+  background-color: #fee7e5;
+}
+body {
+    background-size: cover;
+    background-position: center; 
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "Lato";
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 5em;
+}
+
+.content{
+	padding-top: 5%;
+}
+
+.cont{
+  text-align: center;
+}
+</style>
+</head>
+<body style= "background-image:url('https://images.unsplash.com/photo-1515549832467-8783363e19b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');background-repeat: no-repeat;background-attachment: fixed; background-size: cover">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">S&H</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+     
+      <li class="nav-item">
+        <a class="nav-link" href="/sessions">Sessions</a>
+      </li>
+     
+      <% if (!currentUser){ %>
+      <li class="nav-item">
+        <a class="nav-link" href="/teams">Our team</a>
+      </li>    
+     <li class="nav-item">
+      <a class="nav-link" href="/blogs">Blogs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/workshops">Workshops</a>
+      </li>
+      <% } else{ %>
+      <li class="nav-item">
+        <a class="nav-link" href="/ourteams">Edit team</a>
+      </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/ourblogs">Edit Blogs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/ourworkshops">Edit Workshops</a>
+      </li>
+    <% } %>
+       
+    </ul>
+    <% if (!currentUser){ %>
+    <span class="nav-item">
+      <a class="nav-link" "regu" href="/login">LogIn</a>
+    </span>
+    <% } else{ %>
+    <span class="nav-item">
+      <a class="nav-link" "regu" href="/">Signed in as <%=currentUser.username%></a>
+    </span>
+   <span class="nav-item">
+      <a class="nav-link" "regu" href="/logout">LogOut</a>
+    </span>
+    <% } %>
+    <span class="nav-item">
+      <a class="nav-link" "regu" href="/register">Register</a>
+    </span>
+  </div>
+</nav>
+
+<div class ="container">
+<div class="row">
+  <div class="col-xl-12">
+    <div class="content">
+      <h2 class="cont">Terms And Conditions</h2>
+      <h3 class="cont">At S&H we provide counselling session for varied mental health issues. We however, do not provide assessments or diagnosis. As a part of our policy we have established a code of conduct to ensure the smooth functioning of the sessions. We promote positive mental health, keeping in mind the best interest of our clients and our mental health professionals. Once a client is registered with us we assume that the following terms and conditions have been read and understood. Booking of the session with a confirmation message from our personnel implies the agreement of the terms of conditions which are as follows-
+
+.</h3>
+<p><h3>Walk In Session</h3>
+
+</p>
+      <li>    Clients will be well informed at least 24 hour prior to the session depending on the availability of both the clients and Counsellor
+      </li>
+      <li>A through consent is taken before the beginning of the session
+      </li>
+      <li>Payment is to be done well in advance, post booking the session
+      </li>
+      <li>Duration of the session is 45 mins, clients who come in late for the appointments will not be given extra time rather can only avail the remaining time of the session. The payment however will remain the same.
+      </li>
+      <li>If extra time is demanded by the client, it is at the outset of the counsellor depending on the availability and schedule
+      </li>
+      <li>Cancellation Policy- If any client wishes to cancel the session, it should be well informed at least 24 hours before. Any cancellation after that will not be considered and would be amounting to fees for the pre decided session.
+      </li>
+      <li>We understand the implications of Suicide or self harm and regard these as tragic events which bring great distress to the person’s family and relatives. However suicidal tendencies or harming one-self are acts that are considered to be impulsive in nature and S&H cannot be held liable for this. For any such acts emergency and intervention centres and services must be contacted. Our Counsellors at S&H can meet the client and provide services only during the scheduled sessions.
+      </li>
+      <li>At S&H we preach confidentiality, although cases are discussed with other qualified and senior mentors with undisclosed identity.</li>
+    
+      <li>sdunoidhchicoho icic cshoscihsc iash oiashcoishiosahoih c haoshisac ioshac os ihsacisac oishcoihas oisoiashc is oic haiosh oashc o hiochsoicco
+
+<br></br>
+
+ <p><h3>Online Session</h3>
+ <br></br>
+ </p>
+      
+      <li>Online sessions are subjected to technical limitations hence formal channel will be pre decided keeping in mind the logistics on both the ends.
+      </li>
+      <li>  A thorough consent is taken and digital signature is a must before starting the session
+      </li>
+      <li>  Payment is to be done well in advance, post booking the session
+      </li>
+      <li>Sessions will be booked and confirmed at least 2 days prior depending on the clients and counsellors schedule
+      <li> Duration of the session is 45 minutes, clients who join in late for the appointments will not be given extra time rather can only avail the remaining time of the session. The payment however will remain the same. In case of technical issues during the online session, these will be only considered for the first session assuming that in the latter online sessions problems are going to be tackled by the client.
+      </li>
+      <li>   Online sessions’ cancellation Policy is restricted to confirmation of clients wish to cancel at least 48 hours before. Any cancellation after that will not be considered and would be amounting to fees for the pre decided session.
+      </li>
+      <li>sdunoidhchicoho icic cshoscihsc iash oiashcoishiosahoih c haoshisac ioshac os ihsacisac oishcoihas oisoiashc is oic haiosh oashc o hiochsoicco
+kjhcuidhciudhiu iusuc iu hsiuiugascuic. ugiucgiusc giusc ugicgisu c h jsxasc isugasug cu sgaciusga ciusgciusga iucgasiuis cugsugs acasi cugasiuc gasui gasui
+      </li>
+      <li>At S&H we preach confidentiality, although cases are discussed with other qualified and senior mentors with undisclosed identity.
+</li>
+ 
+
+<p>
+<form action ="/sessions" method="GET">
+  <button class= "btn btn-lg btn-primary">I Accept</button>
+</form>
+    </div>
+  </div>
+</div>
+</div>
+</p>
+
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
